@@ -1,0 +1,405 @@
+/* importacion de estilos para tipos de lestras */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ /*cambia la tipografia de mi botones de menu  */
+*{
+    box-sizing: border-box;
+    font-family: 'work sans';
+    margin: 0;
+    padding: 0;
+ }
+html{
+    /* me permite deslizar cuado hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* Menu */
+.contenerdor-header{
+    /* colo de fosndo de nueetrso menu */
+    background:#1e2026 ;
+    position: fixed;
+    width: 100%; /*tamaña de distacia  del ancho de nuestroi menu */
+    top: 0;
+    left: 0;
+    z-index:99 ;
+}
+.contenerdor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex; /* distribuñe el contenido de mi herder */
+    justify-content: space-between;
+    align-items: center; /* alinea los intes de navegacion encntro de mi menu */
+    padding:15px 20px;
+
+}
+/* estilos para el logo de mi pagina  */
+.contenerdor-header header .logo img{
+    width: 60px; /* ajusta el tamaño de nuestra logo  a nueto gusto */
+    border-radius: 50%;/* reonda  los borde de nuetrologo  */
+    border: 2px solid #1cb698;
+}
+/* estilos para nuetro botones de menu quede en linea */
+.contenerdor-header header ul {
+    display: flex;
+    list-style: none;
+}
+/* estilos para que mi botones de menus se separe  */
+.contenerdor-header header nav ul  li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+/* estilos para cuado paso el curso sobre mi menu cambie de color  */
+.contenerdor-header header nav li a:hover{
+    color:#1cb698 ;
+}
+/* estilos para el boton  de mi pagina  */
+.nav-responsive{
+    background-color: #1cb698;
+    color:#fff ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ESTILOS DE SECTCION DE INICIO */
+
+/* estilos la la setcion de inicio */
+.inicio{
+    background: linear-gradient(to  top, rgba(65, 77, 84, 0.8), rgba(30,35,38,1)),
+    url(https://s1.static.brasilescola.uol.com.br/vestibular/2023/09/programador.jpg);
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+/* estilos para la descripcion de mi foto */
+.inicio .contenedor-banner{
+    padding: 20px;
+    background-color:#1e2326 ;
+    max-width: 500px;
+    height: 530px;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+}
+/* estilos para foto de perfil */
+.inicio .contenedor-banner  img {
+    width: 150px;
+    margin-top: 40px;
+    border-radius: 100% ;
+    border: 10px solid #1cb698;
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+/* estilos para la el nombre juan gabriel  */
+.inicio .contenedor-banner  h1{
+    margin-top: 40px;
+    font-size: 42px;
+
+}
+/* estilos para la etiqueta h2  */
+.inicio .contenedor-banner  h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+/* estilos paara nuestra iconos de contacto */
+.inicio .contenedor-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width:42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 3px;
+    font-size: 25px;
+    transition: .3s;
+
+}
+.inicio .contenedor-banner .redes a:hover{
+background-color: #1cb698;
+}
+/* ESTILOS CSS PARA LA SECCION SOBRE MI  */
+.sobremi{
+    background-color:#1e2026 ;
+    color: #fff;
+    padding: 50px 20px;
+}
+/* estilos para ancho de mi secion sobre mi */
+.sobremi .contenido-seccion{
+    max-width: 1110px;
+    margin: auto;
+}
+/* estilos para titulo general SOBRE MI */
+.sobremi h2{
+    font-size: 48px;
+    font-family:'Rinhteous' ;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+/* estilos para los parrafos luego del titulo */
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* estilos para se resalta en nombre Juan gabriel Almeida Incluido detro del parrafo */
+.sobremi .contenido-seccion p span {
+    color: #1cb698;
+    font-weight: bold;
+}
+/* estilos de linea de separacion de la seccion sobre de  datos personales */
+.sobremi .contenido-seccion hr{
+    border-bottom: 3px solid  #1cb698;
+}
+/* estilos para que las colunas se adacten  */
+.sobremi .fila {
+    display: flex;
+}
+/* estilos de margen para de los apartados datos personales y interes */
+.sobremi .fila .col {
+    width: 50%;
+}
+/* estilos para tamaño y tipo de de letra de los apartados datos personales y interes */
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family:'Rinhteous' ;
+    margin-bottom: 25px;
+}
+/* estilos para poder dar un  estilo de lista  a mis datos personales y  intereses*/
+.sobremi .fila .col ul{
+    list-style: none;
+}
+/* estilos para limitar mis el ancho del texto de  mis datos personales y  intereses */
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+/* estlos para resaltar los encavesados como son telefono o  email */
+.sobremi .fila .col ul li strong{
+    display: inline-block; 
+    color: #1cb698;
+    width: 130px;
+}
+/* estilos para poder dara un color y aspecto diferente ami cargos  */
+.sobremi .fila .col ul li span{
+    background-color: #1cb698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* estilos para poede trabajo con mis interes  */
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* estilos para separar cad uno de mis interes y darles un fondo y hirentacion */
+.sobremi .fila .col .contenedor-intereses .interes{
+    width:  150px;
+    height: 80px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+/* estilos para cmabio  de colo al pasar el apuntador  */
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background: #1cb698;
+}
+/* Estilos para dar tamaño los iconos que acompañan los interes */
+.sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* estilos para el boton de decara de CV */
+.sobremi .button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid  #fff;
+    border-radius: 20px;
+    width:  fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .3s;
+    
+}
+/* estilos para icon de descarga de mi boton CV */
+.sobremi .button i{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+/* estilos para quitar el subrayado y color azul a nuestro botton */
+.sobremi .button a {
+    text-decoration: none;
+    color: #fff;
+}
+/* estilos para que al pasar el apuntador sobre el boton cambien de color */
+.sobremi .button:hover{
+    background: #1cb698;
+}
+/* SECCION  DE HABILIDADES */
+/* fondo de nuetras seccion de habilidades el color del texto */
+.skills{
+    background-color: #252a2e ;
+    color: #fff;
+    padding: 50px 20px;
+}
+/* estilos  para nuentas habilidades tecnicad y profecionales */
+.skills .contenido-secccion {
+    max-width: 1100px;
+    margin: auto;
+}
+/* estilo css para el titulo de nuetra seccion de habilidaes don esta el titulo de habilidades*/
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+/* estilos para que mi habilidades poderlas dividir en dos columnas  */
+.skills .fila{
+    display: flex;
+}
+/* css para  aliniar  mi habilidades  */
+.skills .fila .col{
+    width: 50%;
+    padding:0 20px;
+}
+/* estilos para los titulos de habilidades tecnicas y profesionales */
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill span{
+    font-weight: bold;
+    display: block;
+}
+.skills .skill span i {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+/*  borde rendeado paraada una delo iconos que represanta la habilidades  */
+.skills .fila .col .skill i {
+    border: 2px solid #fff;
+    background-color: #1cb698;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+}
+/* estilos de barras de prgreso de nuestra habilidades  */
+.skills .skill .barra-skill{
+    height:10px ;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 40px ;
+}
+.skills .skill .progreso {
+    background-color: #1cb698;
+    position: absolute;
+    top:0;
+    height: 10px;
+
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17;
+    right: -15px;
+    font-size: 14px;
+}
+/* estilos de llenado de la barra de progreso  javascript */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 78%;}
+}
+/* estilos de llenado de la barra de progreso python */
+.skills .skill .Python{
+    width: 0%;
+    animation: 2s Python forwards;
+}
+@keyframes Python{
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+/*estilos de llenado de la barra de progreso HTML  */
+.skills .skill .HTML{
+    width: 0%;
+    animation: 2s HTML forwards;
+}
+@keyframes HTML{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+/*estilos de llenado de la barra de progreso PHP  */
+.skills .skill .PHP{
+    width: 0%;
+    animation: 2s PHP forwards;
+}
+@keyframes PHP{
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+/*estilos de llenado de la barra de progreso Comunicación  */
+.skills .skill .Comunicacion{
+    width: 0%;
+    animation: 2s Comunicacion forwards;
+}
+@keyframes Comunicacion{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+/*estilos de llenado de la barra de progreso Trabajo en equipo */
+.skills .skill .Trabajo{
+    width: 0%;
+    animation: 2s Trabajo forwards;
+}
+@keyframes Trabajo{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+/*estilos de llenado de la barra de progreso Trabajo en equipo Innovacion*/
+.skills .skill .Innovacion{
+    width: 0%;
+    animation: 2s Innovacion forwards;
+}
+@keyframes Innovacion{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+/*estilos de llenado de la barra de progreso Trabajo en equipo Aprendizaje*/
+.skills .skill .Aprendizaje{
+    width: 0%;
+    animation: 2s Aprendizaje forwards;
+}
+@keyframes Aprendizaje{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
