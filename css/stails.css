@@ -160,7 +160,7 @@ background-color: #1cb698;
 }
 /* estilos de linea de separacion de la seccion sobre de  datos personales */
 .sobremi .contenido-seccion hr{
-    border-bottom: 3px solid  #1cb698;
+    border-bottom: 3px solid #1cb698;
 }
 /* estilos para que las colunas se adacten  */
 .sobremi .fila {
@@ -402,4 +402,394 @@ background-color: #1cb698;
 @keyframes Aprendizaje{
     0%{width: 0%;}
     100%{width: 80%;}
+}
+/* SECCCION  CURRICULUM*/
+.curriculum{
+    background-color: #1e2326 ;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .fila{
+    display: flex;
+    
+}
+/* Cambia el valor  el tamaño y el color principal de los titulos principales  */
+.curriculum .contenido-seccion  h3{
+  
+    font-size: 35px;
+    font-family: 'Righteous';
+} 
+/* separa los filas como si fueran columnas  */
+.curriculum  .fila .col {
+    width: 49%;
+    padding: 0 30px;
+}
+
+/* colorea o resalta el color de la lina de divivion entre educacion  y trayectoria laboral */
+.curriculum .fila .izquierda{
+    border-right:  2px solid #1cb698;
+}
+
+.curriculum .fila .derecha{
+    border-left:  2px solid #1cb698;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252a2e;
+    position: relative;
+    border-radius: 30px;
+}
+.curriculum  .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum  .fila .item h4{
+    color: #1cb698;
+    font-size:22px ;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .Fecha{
+    display: block;
+    color: #1cb698;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #1cb698 ;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #1cb698 ;
+}
+/* Centra enn cnentro indicado como tipo linea del tiempo */
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -58px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* PORTAFOLIO */
+/* cambia el color de fondo de mi seccion de proyectos */
+.portafolio{
+    background-color: #252a2e;
+    color: #fff;
+    padding: auto;
+}
+/* centra mi galeria de proyectos*/
+.portafolio .contenedor-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+/* Estilos para el tituolo de protefolio */
+.portafolio h2{
+    font-size:48px ;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+/* Ajusta el posicion de de la imganes de nuestras galerias */
+.portafolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* justifica pondien un en enfrente de otra las imganes  */
+.portafolio .galeria .proyecto{
+    position: relative;
+    max-width:340px;
+    height: fit-content;
+    margin: 10px;
+    margin: pointer;
+}
+/* ajusta el tamaño de la imgens dejandolas de un solo diametro */
+.portafolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+    width: 250px; /* Ancho igual para todas las imágenes */
+    height: 200px; /* Altura igual para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra el área definida sin distorsionarse */
+    margin: 10px;
+    
+}
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background:linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portafolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+
+}
+.portafolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+
+}
+.portafolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+    color: #131517;
+}
+/* SECCION DE CONTACTO */
+.contacto {
+ background-image: url(/img/contact_bg.png);
+ background-color: #1e2026;
+ color: #fff;
+ padding: 50px 0;
+}
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila {
+    display: flex;
+
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+/* Estilos para los  campos de formalario */
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto ul img{
+    width:250%; /* Ancho estándar */
+    height: 250%; /* Mantiene la proporción original */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+   display: block; /* Elimina el espacio en blanco debajo de la imagen */
+   margin: 5px auto; /* Centra la imagen horizontalmente */
+}
+/* Estilos para botton de formulario  */
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 10%;
+}
+/* Estlios para que mi botton  de formulario tengao un efecto de carga a la hora de pasar el cursor sobre  el botton */
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:#1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+/* Estilos de efecto para para cuado pase el cursor  */
+.contacto button:hover .overlay{
+    width: 100%;
+}
+/* Estilos de color verde para cada uno de los iconos  */
+.contacto ul i {
+    color: #1CB698;
+}
+.contacto .col .info {
+    position: absolute;
+    border-radius: 10%;
+    top: 40%;
+    background-color: #0e283c;
+    padding: 20px;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.contacto .col .info {
+    list-style: none;
+}
+.contacto  .col .info  li {
+    margin-bottom: 20px;
+
+}
+.contacto  .col .info  li i{
+    color: #1CB698;
+    display: inline-block;
+}
+/* Estilos css para mi foter */
+footer{
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes {
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width:42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 3px;
+    font-size: 25px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -25px;
+    border-radius:50% ;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIBE */
+/* Estilos para que mi wed se  adacte a cualquier dispositivo */
+@media screen and (max-width:980px){
+    nav {
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sobremi .fila {
+        display: block;
+    }
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+    .curriculum .fila {
+        display: block;
+    }
+    .curriculum .fila .col {
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left:20px ;
+    }
+    .portafolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portafolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portafolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display:block ;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
 }

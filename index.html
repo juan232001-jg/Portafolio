@@ -21,24 +21,24 @@
                 </a>
                 
             </div>
-            <nav id="nav">
+            <nav id="nav" class="responsive">
                 <ul>
                     <!-- botones de navegacion  -->
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">HABILIDADES</a></li>
-                    <li><a href="#curiculum">CORICULUM</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contact">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()" >INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" >SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()" >HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" >CORICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()" >PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" >CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
      </div>
      <!-- SECTCION DE INICIO -->
-      <section id="inicio" class="inicio">
+        <section id="inicio" class="inicio">
         <div class="contenedor-banner">
             <div class="contenedor-img">
                 <img src="img/Juan2.png" alt="">
@@ -46,25 +46,14 @@
             <h1>Juan Gabriel Almeida</h1>
             <h2>Ingeniero en sistemas / Experto en Desarrollo de Software y programación</h2>
             <div class="redes">
-                <a href="mailto:your-email@example.com" class="button" target="_blank">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/juan232001-jg" class="button" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/your-profile" class="button" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/JuanGab37660760" class="button" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/your-profile" class="button" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
+                <a href="mailto:your-email@example.com" class="button" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/juan232001-jg" class="button" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/juan-gabriel-almeida-martinez-jgalmeida/" class="button" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/JuanGab37660760" class="button" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/your-profile" class="button" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
         </div>
       </section>
-
       <!-- SECCION SOBRE MI  -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
@@ -133,7 +122,7 @@
                  
         </div>
         <button  class="button">
-            <a href="ruta/a/tu/cv.pdf" download>
+            <a href="/lib/JUAN GABRIEL ALMEIDA MARTINEZ INGENIERO EN SISTEMAS B.pdf" download>
                 <i class="fas fa-file-download"></i> Descargar CV
             </a>
         </button>
@@ -219,7 +208,192 @@
             </div>
         </div>
     </section>
+    <!-- SECCION CURICULUMN  -->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniero En Sistemas</h4>
+                        <span class="casa">Universidad Abierta Y Distancia - UNAD </span>
+                        <span class="Fecha"> Abr/2022 - Presente</span>
+                        <p>
+                            Formación integral en el ámbito de la tecnología, 
+                            la información y los sistemas, capacitando a 
+                            profesionales para diseñar, desarrollar, implementar, 
+                            administrar y optimizar sistemas complejos. Con sólidos 
+                            conocimientos en desarrollo de software, administración 
+                            de bases de datos y optimización de redes informáticas. 
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <br>              
+                        <h4>Tecnología En Análisis En Desarrollo De Sistemas De Información</h4>
+                        <span class="casa">Servicio Nacional De Aprendizaje - SENA  </span>
+                        <span class="Fecha"> Abr/2020 - Dic/2021</span>
+                        <p>
+                            Formación integral en el ámbito de la tecnología, 
+                            la información y los sistemas, capacitando a 
+                            profesionales para diseñar, desarrollar, implementar, 
+                            administrar y optimizar sistemas complejos. Con sólidos 
+                            conocimientos en desarrollo de software, administración 
+                            de bases de datos y optimización de redes informáticas. 
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Trayectoria laboral </h3>
+                    <div class="item izq">
+                        <h4>Colombia Móvil S.A.</h4>
+                        <span class="casa">PRACTÍCATE PROFESIONAL EN LA GERENCIA DE ASEGURAMIENTO REGIONAL ORIENTE</span>
+                        <span class="Fecha"> Ene/2022 – Jul/2022</span>
+                        <p class=" parrafo">
+                            Funciones
+                            Carga y actualización de datos de clientes en sistemas de información
+                            Planificación y organización de proyectos según cronogramas establecidos.
+                            Resolver problemas técnicos relacionados con el funcionamiento de los portales
+                            Elaboración de informes de avance de proyectos
+                            Creación y mantenimiento de bases de datos 
+                        </p>
+                        <br>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>FSCR Ingeniería S.A.S</h4>
+                        <span class="casa">AUXILIAR DE SISTEMAS INFORMÁTICOS </span>
+                        <span class="Fecha"> Ago/2022 – Jun/2023</span>
+                        <p>
+                            Funciones
+                            Administración y actualización de bases de datos SQL Server, Oracle o MySQL, asegurando la integridad y disponibilidad de los datos.
+                            Implementación y desarrollo de software enfocados a las necedades de los clientes
+                            Monitoreo del rendimiento de los portales, identificando y solucionando problemas de rendimiento y seguridad.
+                            Monitoreo del rendimiento de los sistemas de información, identificando y solucionando problemas.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- SECTION DE PORTAFOLIO -->
+    <section class="portafolio" id="portafolio">
+        <div class="contenedor-seccion">
+        <h2>PORTAFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="img/P1.png" alt="">
+                <div class="overlay">
+                    <h3>Diseños de Creativos</h3>
+                    <p>Paginas Wed Adactables</p>
+                </div>
+            </div>
+            
+            <div class="proyecto">
+                <img src="img/p2.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseños de Creativos</h3>
+                    <p>Paginas Wed Adactables</p>
+                </div>
+            </div>
+          
+            <div class="proyecto">
+                <img src="img/p3.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseños de Creativos</h3>
+                    <p>Paginas Wed Adactables</p>
+                </div>
+            </div>
+            
+            <div class="proyecto">
+                <img src="img/p4.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseños de Creativos</h3>
+                    <p>Paginas Wed Adactables</p>
+                </div>
+            </div>
+           
+        </div>
+        </div>
+    </section>
+    <!-- SECTION DE CONTACTO -->
+     <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario de contacto -->
+                <div class="col">
+                    <input type="text" placeholder="Ingresa Tu Nombre">
+                    <input type="text" placeholder="Numero de Celular">
+                    <input type="text" placeholder="Dirrecion Correo Electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+
+                </div>
+                <!-- Mapa -->
+                
+                <div class="col">
+                <ul>
+                <!-- <img src="/img/dirreccion.jpg" alt=""> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66892.11387401565!2d-73.12062202578215!3d7.115643489577617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e68157af751c0ed%3A0x75a0e4551148c36c!2sBucaramanga%2C%20Santander!5e1!3m2!1ses-419!2sco!4v1723516576996!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="info">
+                <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Bucaramangan Colombia
+                </li>
+                <li>
+                <i class="fa-solid fa-mobile-screen"></i>
+                Llamanos: 3177461057 
+                </li>
+                <li>
+                <i class="fa-solid fa-envelope"></i>
+                Email: juan232001-jg
+                </li>
+                </div>
+                </ul>
+                    
+            
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+    </section>
+    <!-- SECCION DE FOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="mailto:juangabrielal2001@gmail.com" class="button" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/juan-gabriel-almeida-martinez-jgalmeida/" class="button" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/JuanGab37660760" class="button" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/your-profile" class="button" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        </footer>
+</div>
+</div>
+</div>
+     </section>
 </body>
 <!-- nuetras conexion de codigo js -->
+
  <script src="js/index.js"></script>
 </html>
